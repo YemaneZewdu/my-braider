@@ -5,4 +5,5 @@ Contributors:
    - Oji Ofong
    - Yemane Zewdu
    - Ezra Mengiste
+   - Tadele Lamma
 
