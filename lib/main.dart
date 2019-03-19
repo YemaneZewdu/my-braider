@@ -7,7 +7,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'myBraider MVP',
       theme: ThemeData(
         // This is the theme of your application.
         //
@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
         // or simply save your changes to "hot reload" in a Flutter IDE).
         // Notice that the counter didn't reset back to zero; the application
         // is not restarted.
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.yellow,
       ),
       home: MyHomePage(title: 'myBraider Home Page'),
     );
@@ -91,6 +91,14 @@ class _MyHomePageState extends State<MyHomePage> {
           // horizontal).
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
+            Padding(
+              padding: EdgeInsets.all(20.0),
+              child: Text(
+                "Welcome to myBraider...Let's code this thing up",
+                textScaleFactor: 1.5,
+                textAlign: TextAlign.center,
+              ),
+            ),
             Text(
               'You have pushed the button this many times:',
             ),
