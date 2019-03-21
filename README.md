@@ -6,7 +6,7 @@ Contributors:
    - Yemane Zewdu
    - Ezra Mengiste
    - Tadele Lamma
-
+   - Henok Tasissa
 A new Flutter application.
 
 ## Getting Started
