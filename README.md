@@ -2,11 +2,13 @@
 
 Contributors:
 
-   - Oji Ofong
-   - Yemane Zewdu
-   - Ezra Mengiste
-   - Tadele Lamma
-   - Henok Tasissa
+   * Ezra Mengiste
+   * Henok Tasissa
+   * Oji Ofong
+   * Tadele Lamma
+   * Yemane Zewdu
+
+   
 A new Flutter application.
 
 ## Getting Started
