@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_braider/examples/page_indicator.dart';
 import 'package:my_braider/home/HomeScreen.dart';
 
 void main() => runApp(MyApp());
@@ -8,6 +9,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'myBraider MVP',
       theme: ThemeData(
         // This is the theme of your application.
@@ -22,7 +24,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         accentColor: Colors.teal,
       ),
-      home: HomeScreen(),
+      home: MyPageIndicatorSampleScreen(),
     );
   }
 }
