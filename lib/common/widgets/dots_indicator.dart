@@ -30,7 +30,7 @@ class DotsIndicator extends AnimatedWidget {
   final Color color;
 
   // The base size of the dots
-  static const double _kDotSize = 8.0;
+  static const double _kDotSize = 6.0;
 
   // The increase in the size of the selected dot
   static const double _kMaxZoom = 1.5;

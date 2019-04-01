@@ -1,6 +1,7 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:my_braider/home/model/user.dart';
+import 'package:my_braider/userdetail/user_detail_screen.dart';
 import 'package:smooth_star_rating/smooth_star_rating.dart';
 
 class HomeListItem extends StatelessWidget {
@@ -10,6 +11,14 @@ class HomeListItem extends StatelessWidget {
 
   void _showSnackBar(BuildContext context, String msg) {
     Scaffold.of(context).showSnackBar(SnackBar(content: Text(msg)));
+    launchUserDetailScreen(context);
+  }
+
+  void launchUserDetailScreen(BuildContext context) {
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => UserDetailScreen()),
+    );
   }
 
   @override

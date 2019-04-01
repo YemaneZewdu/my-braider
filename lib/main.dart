@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:my_braider/examples/sliverappbar_with_tabbar.dart';
+import 'package:my_braider/home/HomeScreen.dart';
 
 void main() => runApp(MyApp());
 
@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         accentColor: Colors.teal,
       ),
-      home: MySliverAppbarWithTabScreen(),
+      home: HomeScreen(),
     );
   }
 }

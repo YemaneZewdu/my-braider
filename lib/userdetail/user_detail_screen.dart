@@ -1,13 +1,31 @@
 import 'package:flutter/material.dart';
+import 'package:my_braider/common/widgets/page_view_indicator_container.dart';
 
-class MySliverAppbarWithTabScreen extends StatefulWidget {
+class UserDetailScreen extends StatefulWidget {
   @override
-  State createState() => new MySliverAppbarWithTabScreenState();
+  State createState() => new UserDetailScreenState();
 }
 
-class MySliverAppbarWithTabScreenState
-    extends State<MySliverAppbarWithTabScreen> {
+class UserDetailScreenState extends State<UserDetailScreen> {
   var tabTitles = ["Services", "Details", "Reviews", "Portfolio"];
+  static final _controller = new PageController();
+
+  static final List<Widget> _pages = <Widget>[
+    Container(color: Colors.purple),
+    Container(color: Colors.yellow),
+    Container(color: Colors.cyan),
+    Container(color: Colors.purple),
+    Container(color: Colors.yellow),
+    Container(color: Colors.cyan),
+  ];
+
+  PageView pageView = PageView.builder(
+    controller: _controller,
+    itemCount: _pages.length,
+    itemBuilder: (BuildContext context, int index) {
+      return _pages[index];
+    },
+  );
 
   @override
   Widget build(BuildContext context) {
@@ -23,12 +41,13 @@ class MySliverAppbarWithTabScreenState
                 pinned: true,
                 flexibleSpace: FlexibleSpaceBar(
                   centerTitle: true,
-                  title: Text("Collapsing Toolbar",
+                  title: Text("",
                       style: TextStyle(
                         color: Colors.white,
                         fontSize: 16.0,
                       )),
-                  background: Image.asset("assets/test.jpg", fit: BoxFit.cover),
+                  background:
+                      PageViewIndicatorContainer(pageView, _pages.length),
                 ),
               ),
               SliverPersistentHeader(
