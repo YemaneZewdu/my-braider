@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:my_braider/home/HomeListItem.dart';
-import 'package:my_braider/home/HomeSliverAppBar.dart';
-import 'package:my_braider/home/model/HomeItem.dart';
+import 'package:my_braider/home/widgets/home_list_item.dart';
+import 'package:my_braider/home/widgets/home_sliver_appbar.dart';
+import 'package:my_braider/home/model/user.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
