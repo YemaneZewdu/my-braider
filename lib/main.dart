@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:my_braider/examples/page_indicator.dart';
-import 'package:my_braider/home/HomeScreen.dart';
+import 'package:my_braider/examples/sliverappbar_with_tabbar.dart';
 
 void main() => runApp(MyApp());
 
@@ -24,7 +23,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         accentColor: Colors.teal,
       ),
-      home: MyPageIndicatorSampleScreen(),
+      home: MySliverAppbarWithTabScreen(),
     );
   }
 }
