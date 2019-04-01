@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:my_braider/home/HomeScreen.dart';
+import 'package:my_braider/home/home_screen.dart';
 
 void main() => runApp(MyApp());
 

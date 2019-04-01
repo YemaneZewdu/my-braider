@@ -22,12 +22,8 @@ class MyPageIndicatorSampleScreenState
     Container(color: Colors.purple),
     Container(color: Colors.yellow),
     Container(color: Colors.cyan),
-    Container(color: Colors.purple),
-    Container(color: Colors.yellow),
-    Container(color: Colors.cyan),
-    Container(color: Colors.purple),
-    Container(color: Colors.yellow),
-    Container(color: Colors.cyan),
+    Container(color: Colors.red),
+    Container(color: Colors.orange),
   ];
 
   Widget _buildPageItem(BuildContext context, int index) {
