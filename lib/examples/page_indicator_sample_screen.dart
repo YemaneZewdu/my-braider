@@ -1,22 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:my_braider/common/widgets/dots_indicator.dart';
 
-class MyPageIndicatorSampleScreen extends StatefulWidget {
+class PageIndicatorSampleScreen extends StatefulWidget {
   @override
-  State createState() => new MyPageIndicatorSampleScreenState();
+  State createState() => new PageIndicatorSampleScreenState();
 }
 
-class MyPageIndicatorSampleScreenState
-    extends State<MyPageIndicatorSampleScreen> {
+class PageIndicatorSampleScreenState
+    extends State<PageIndicatorSampleScreen> {
   final _controller = new PageController();
-
-  static const _kDuration = const Duration(milliseconds: 300);
-
-  static const _kCurve = Curves.ease;
-
-  static onTap(index) {
-    print("$index selected.");
-  }
 
   final List<Widget> _pages = <Widget>[
     Container(color: Colors.purple),
@@ -25,10 +17,6 @@ class MyPageIndicatorSampleScreenState
     Container(color: Colors.red),
     Container(color: Colors.orange),
   ];
-
-  Widget _buildPageItem(BuildContext context, int index) {
-    return _pages[index];
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -39,7 +27,7 @@ class MyPageIndicatorSampleScreenState
             controller: _controller,
             itemCount: _pages.length,
             itemBuilder: (BuildContext context, int index) {
-              return _buildPageItem(context, index);
+              return _pages[index];
             },
           ),
           new Positioned(
@@ -56,8 +44,8 @@ class MyPageIndicatorSampleScreenState
                   onPageSelected: (int page) {
                     _controller.animateToPage(
                       page,
-                      duration: _kDuration,
-                      curve: _kCurve,
+                      duration: Duration(milliseconds: 300),
+                      curve: Curves.ease,
                     );
                   },
                 ),
