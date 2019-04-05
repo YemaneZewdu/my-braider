@@ -1,7 +1,7 @@
 # my-braider
 
 Contributors:
-
+   * Hiwot
    * Ayomide
    * Ezra Mengiste
    * Henok Tasissa
